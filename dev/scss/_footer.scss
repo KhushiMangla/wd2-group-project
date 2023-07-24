@@ -1,5 +1,8 @@
 @use "_variables" as * ;
 
 footer{
-    background-color: $cuisines-bg;
-}
+     padding: 20px;
+     text-align: center;
+   color: $latest-recipes-even;
+   background-color: $main-menu;
+} 
