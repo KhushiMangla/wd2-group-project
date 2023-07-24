@@ -1,3 +1,20 @@
 // Place your Sass imports here...
 @use "_variables" as * ;
 @use "_footer"
+
+
+
+// Mobile
+@media (max-width: 320px) {
+  /* Your mobile styles go here */
+}
+
+// Tablet
+@media (min-width: 321px) and (max-width: 768px) {
+  /* Your tablet styles go here */
+}
+
+// Desktop
+@media (min-width: 769px) {
+  /* Your desktop styles go here */
+}
