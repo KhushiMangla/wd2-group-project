@@ -1,0 +1,70 @@
+@use 'variables' as *;
+// dont't forget to set font-size dicuss 
+// left arrow font icon confirm with laurane as link is in header ther might be conflict
+// *** dont use flex-wrap for cusine list in side-bar
+
+
+
+body {
+    font-family: Roboto;
+    background-image: url("images/bg.jpg");
+}
+.gallery-container,
+.latest-recipes-container,
+.cuisines-container,
+.container-4,
+.container-5 {
+    margin-bottom: 10px; /* Adjust the value as per your preference */
+    background-color: transparent; /* Set the background color to transparent */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Roboto;
+}
+
+
+
+
+.gallery-container {
+    // margin-bottom: 5px;
+    max-width:100%; 
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+
+.gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery img{
+    width: 100%;
+
+    // max-width: 100%;
+    // height: auto;
+}
+  
+.gallery-paragraph {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    color: $text-white;
+    padding: 1rem;
+   
+  
+
+}
+
+.gallery-paragraph p {
+    margin: 0;
+}
+
+
