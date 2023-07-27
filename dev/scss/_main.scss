@@ -11,13 +11,16 @@ body {
     font-family: Roboto;
     background-image: url("images/bg.jpg");
 }
+
 .gallery-container,
 .latest-recipes-container,
 .cuisines-container,
 .container-4,
 .container-5 {
-    margin-bottom: 10px; /* Adjust the value as per your preference */
-    background-color: transparent; /* Set the background color to transparent */
+    margin-bottom: 10px;
+    /* Adjust the value as per your preference */
+    background-color: transparent;
+    /* Set the background color to transparent */
 }
 
 h1,
@@ -39,10 +42,29 @@ h6 {
 // }
 .gallery-container {
     display: grid;
-    grid-template-columns: 1fr; /* Single column by default */
+    grid-template-columns: 1fr;
+    /* Single column by default */
     // gap: 10px; /* Add some spacing between images */
-  }
-  
+
+    @media (min-width: 31.25em) {
+        grid-template-columns: 1fr 1fr;
+      
+        .gallery {
+            grid-column: 1/ span 2;
+            /* This spans the first image to take two rows */
+        }
+
+        .gallery:not(:first-child) {
+            grid-column: 2;
+            /* Place the other two images in the second column */
+            grid-column: auto;
+            /* Reset the grid-row property for the other two images */
+        }
+    }
+
+
+}
+
 
 
 .gallery {
@@ -50,13 +72,13 @@ h6 {
     overflow: hidden;
 }
 
-.gallery img{
+.gallery img {
     width: 100%;
 
     max-width: 100%;
     height: auto;
 }
-  
+
 .gallery-paragraph {
     position: absolute;
     bottom: 0.25rem;
@@ -66,8 +88,8 @@ h6 {
     text-transform: uppercase;
     color: $text-white;
     padding: 1rem;
-   
-  
+
+
 
 }
 
@@ -159,7 +181,7 @@ h6 {
     margin-bottom: 2px;
     // max-width:320px;
     border: 2px solid rgba(0, 0, 0, 0.5);
-   
+
 }
 
 .cuisines-container-list {
@@ -216,42 +238,43 @@ h6 {
 // container-4
 
 .container-4,
-.container-5
-{
+.container-5 {
     text-transform: uppercase;
     // max-width:320px;
     border: 2px solid rgba(0, 0, 0, 0.5);
 
 }
+
 .container-4-content,
-.container-5-content{
+.container-5-content {
     padding: 10px;
 }
 
 .container-4 img,
-.container-5 img{
-    max-width:100%;
+.container-5 img {
+    max-width: 100%;
 }
+
 .container-4 h2,
-.container-5 h2{
+.container-5 h2 {
     color: $food-title;
-    
+
 }
+
 .container-4 .read-more,
-.container-5 .read-more
-{
+.container-5 .read-more {
     // max-width:320px;
     background-color: $read-more-bg;
     height: 4vh;
     width: 7rem;
     color: $text-white;
     // text-align: center; /* Center the text inside the button */
-    margin-left: auto; 
+    margin-left: auto;
     margin-bottom: 15px;
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 
 }
 
@@ -267,28 +290,9 @@ h6 {
 //     //     margin-left:auto;
 //     //     margin-right: auto;
 //     // }
-    
+
 //     .gallery{
 //         display: grid;
 //         grid-auto-columns:3fr ;
 //     }
 // }
-
-
-
-@media (min-width: 500px) {
-    .gallery-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .gallery {
-      grid-column: 1/ span 2; /* This spans the first image to take two rows */
-    }
-  
-    .gallery:not(:first-child) {
-      grid-column: 2; /* Place the other two images in the second column */
-      grid-column: auto; /* Reset the grid-row property for the other two images */
-    }
-  }
-  
