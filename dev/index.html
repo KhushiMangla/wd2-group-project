@@ -42,11 +42,16 @@
 <body>
   <section class="gallery-container">
     <div class="gallery">
-      <img src="images/mussel-small.jpg" 
-        srcset="images/mussel-small.jpg 320w,
-                 images/mussel.jpg 670w"
-                 sizes="(max-width: 670px) 100px, 320px"
-        alt="mussels" />
+    <picture>
+      <!-- Image size: 100px for screen sizes below 670px -->
+      <source media="(max-width: 670px)" srcset="images/mussel-small.jpg 320w">
+    
+      <!-- Image size: 320px for screens above 670px -->
+      <source srcset="images/mussel.jpg 670w">
+    
+      <!-- Fallback image -->
+      <img alt="mussels" src="images/mussel-small.jpg">
+    </picture>
       <div class="gallery-paragraph">
         <p>Lorem ipsum dolor sit</p>
       </div>
