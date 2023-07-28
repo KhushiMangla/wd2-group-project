@@ -1,0 +1,77 @@
+@use "variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+h3 {
+  text-transform: uppercase;
+  color: white;
+  padding: 0.3rem;
+  background-color: $latest-recipes-bg;
+  font-family: $font;
+  font-weight: 350;
+  font-size: small;
+  margin: 0;
+}
+
+.latest-recipes {
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li:nth-child(even) {
+            background-color: $latest-recipes-even;
+        }
+    }
+    li {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0.3rem;
+        gap: 0.5rem;
+        font-family: $font;
+        font-weight: 300;
+        text-transform: uppercase;
+        
+    }
+    img {
+        text-align: left;
+        box-shadow: -1px -1px 0px 2px $hamburger-bg;
+    }
+}
+//phone-small👇
+.cuisines {
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        grid-gap: 15px; 
+        padding: 0.2rem 0.5rem;
+        font-family: $font;
+        font-weight: 300;
+        font-size: 0.6rem;
+        white-space: nowrap;
+        //phone-large👇
+        @media (min-width:330px){
+        display: grid;
+        grid-template-columns: repeat(3,1fr); 
+        // font-size: 0.3rem;
+    }
+       //tablet-cuisines
+    //    @media (min-width:500px){
+        
+    //    }
+    //    Desktop-cuisines
+          @media (min-width:770px){
+           display:flex;
+           flex-direction: column;
+           gap:0.4rem;
+
+          }
+  }
+}
+@media (min-width:770px){
+    .sidebar{
+        position: absolute;
+        right:0rem;
+        top:0rem;
+        width: 10rem;
+        font-size: small;
+    }
+}
