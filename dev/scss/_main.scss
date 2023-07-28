@@ -11,6 +11,11 @@ body {
     font-family: $font;
     background-image: url("images/bg.jpg");
 }
+img {
+	max-width: 100%;
+	height: auto;	
+}
+
 
 .gallery-container,
 .latest-recipes-container,
@@ -288,11 +293,11 @@ h6 {
 
 
 //background image 
-// @media (min-width: em){
-// 	/* *** NOTE: Add the background image for the body here... */
+@media (min-width: 1000px){
+	/* *** NOTE: Add the background image for the body here... */
 
-// 	body {
-// 		background-image: url(../images/bg.jpg);
+	body {
+		background-image: url(../images/bg.jpg);
 
-// 	   }
-//     }
+	   }
+    }
