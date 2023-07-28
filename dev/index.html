@@ -42,7 +42,11 @@
 <body>
   <section class="gallery-container">
     <div class="gallery">
-      <img src="images/mussel-small.jpg" alt="mussels" />
+      <img src="images/mussel-small.jpg" 
+        srcset="images/mussel-small.jpg 320w,
+                 images/mussel.jpg 670w"
+                 sizes="(max-width: 670px) 100px, 320px"
+        alt="mussels" />
       <div class="gallery-paragraph">
         <p>Lorem ipsum dolor sit</p>
       </div>
