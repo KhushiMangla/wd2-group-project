@@ -1,9 +1,24 @@
-@use "_variables" as * ;
+@use '_variables' as *;
 
-footer{
-     padding: 20px;
-     text-align: center;
-   color: $latest-recipes-even;
-   background-color: $main-menu;
-};
+.arrow-container {
+	display: flex;
+	align-items: center;
+}
 
+.arrow-container a {
+	margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.Arrow {
+	/* Add styles for the arrow icon */
+
+	color: $header-bg;
+	padding: 1rem;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	color: $latest-recipes-even;
+	background-color: $main-menu;
+}
