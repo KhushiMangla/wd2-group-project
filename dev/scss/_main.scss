@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Roboto;
+    font-family: $font;
 }
 
 
@@ -46,19 +46,21 @@ h6 {
     /* Single column by default */
     // gap: 10px; /* Add some spacing between images */
 
-    @media (min-width: 31.25em) {
+    @media (min-width: 48.125rem) {
+        // max-width: 70%;
         grid-template-columns: 1fr 1fr;
       
         .gallery {
             grid-column: 1/ span 2;
             /* This spans the first image to take two rows */
         }
-
+        
         .gallery:not(:first-child) {
             grid-column: 2;
             /* Place the other two images in the second column */
             grid-column: auto;
             /* Reset the grid-row property for the other two images */
+            
         }
     }
 
@@ -69,7 +71,7 @@ h6 {
 
 .gallery {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .gallery img {
@@ -98,142 +100,142 @@ h6 {
 }
 
 
-// latest recipe yafeng
+// latest recipe (The style Kushi did)
 
-.latest-recipes-container {
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    margin-bottom: 5px;
-    // max-width:320px;
+// .latest-recipes-container {
+//     border: 2px solid rgba(0, 0, 0, 0.5);
+//     margin-bottom: 5px;
+//     // max-width:320px;
 
-}
+// }
 
-.latest-recipes-container h2 {
-    text-transform: uppercase;
-    background-color: $latest-recipes-bg;
-    color: $text-white;
-    padding: 1rem;
-    margin: 0;
-    // font-family: Roboto;
+// .latest-recipes-container h2 {
+//     text-transform: uppercase;
+//     background-color: $latest-recipes-bg;
+//     color: $text-white;
+//     padding: 1rem;
+//     margin: 0;
+//     // font-family: Roboto;
 
-}
+// }
 
-.recipe-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.recipe-list li {
-    display: flex;
-    align-items: center;
-}
+// .recipe-list {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+// }
 
 
-
-
-.recipe-list li:nth-child(even) .recipe-content-wrapper {
-    background-color: $latest-recipes-even;
-    /* Set the background color of even divs to grey */
-
-
-}
-
-.recipe-content-wrapper {
-    padding: 0.5rem;
-    width: 100%;
-
-}
-
-.recipe-list li img {
-    height: auto;
-    margin-right: 1rem;
-    border: 2px solid $cuisines-bg;
-}
-
-.recipe-content-wrapper {
-    display: flex;
-    // background-color: $white-bg;
-}
-
-.recipe-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    /* Center vertically */
-}
-
-.recipe-content p {
-    margin: 0;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-
-.recipe-content p {
-    margin: 10px 0;
-
-}
-
-// cusines
-
-.cuisines-container {
-    margin-bottom: 2px;
-    // max-width:320px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-
-}
-
-.cuisines-container-list {
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.cuisines-container h2 {
-    text-transform: uppercase;
-    background-color: $latest-recipes-bg;
-    color: $text-white;
-    padding: 1rem;
-    margin: 0;
-}
-
-.cuisines-list {
-    display: flex;
-    /* Use flexbox to create the two-column layout */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    /* Allow flex items to wrap to the next row */
-    padding: 0.5rem;
-}
-
-.cuisines-list li {
-    flex-basis: 50%;
-    /* Each cuisine takes 50% width of the container */
-    margin-bottom: 10px;
-    /* Add some space between each cuisine */
-
-}
+// .recipe-list li {
+//     display: flex;
+//     align-items: center;
+// }
 
 
 
-.cuisine-column {
-    // flex: 1 1 33.33%; /* This makes each column take up one-third of the available width */
-    // max-width: 33.33%;
-    padding: 0 10px;
-    /* Add some spacing between columns */
-    box-sizing: border-box;
-}
+
+// .recipe-list li:nth-child(even) .recipe-content-wrapper {
+//     background-color: $latest-recipes-even;
+//     /* Set the background color of even divs to grey */
 
 
-.cuisines-list li {
-    list-style: none;
-    margin-bottom: 10px;
+// }
 
-}
+// .recipe-content-wrapper {
+//     padding: 0.5rem;
+//     width: 100%;
+
+// }
+
+// .recipe-list li img {
+//     height: auto;
+//     margin-right: 1rem;
+//     border: 2px solid $cuisines-bg;
+// }
+
+// .recipe-content-wrapper {
+//     display: flex;
+//     // background-color: $white-bg;
+// }
+
+// .recipe-content {
+//     flex: 1;
+//     display: flex;
+//     align-items: center;
+//     /* Center vertically */
+// }
+
+// .recipe-content p {
+//     margin: 0;
+//     font-size: 18px;
+//     text-transform: uppercase;
+// }
+
+
+// .recipe-content p {
+//     margin: 10px 0;
+
+// }
+
+// // cusines (The style Kushi did)
+
+// .cuisines-container {
+//     margin-bottom: 2px;
+//     // max-width:320px;
+//     border: 2px solid rgba(0, 0, 0, 0.5);
+
+// }
+
+// .cuisines-container-list {
+
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+
+// .cuisines-container h2 {
+//     text-transform: uppercase;
+//     background-color: $latest-recipes-bg;
+//     color: $text-white;
+//     padding: 1rem;
+//     margin: 0;
+// }
+
+// .cuisines-list {
+//     display: flex;
+//     /* Use flexbox to create the two-column layout */
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//     flex-wrap: wrap;
+//     /* Allow flex items to wrap to the next row */
+//     padding: 0.5rem;
+// }
+
+// .cuisines-list li {
+//     flex-basis: 50%;
+//     /* Each cuisine takes 50% width of the container */
+//     margin-bottom: 10px;
+//     /* Add some space between each cuisine */
+
+// }
+
+
+
+// .cuisine-column {
+//     // flex: 1 1 33.33%; /* This makes each column take up one-third of the available width */
+//     // max-width: 33.33%;
+//     padding: 0 10px;
+//     /* Add some spacing between columns */
+//     box-sizing: border-box;
+// }
+
+
+// .cuisines-list li {
+//     list-style: none;
+//     margin-bottom: 10px;
+
+// }
 
 // container-4
 
