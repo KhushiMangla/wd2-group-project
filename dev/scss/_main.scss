@@ -1,5 +1,5 @@
 @use 'variables' as *;
-
+@use "section2";
 /* dont't forget to set font-size dicuss 
    left arrow font icon confirm with laurane as link is in header ther might be conflict
    *** dont use flex-wrap for cusine list in side-bar */
@@ -8,9 +8,14 @@
 
 
 body {
-    font-family: Roboto;
+    font-family: $font;
     background-image: url("images/bg.jpg");
 }
+img {
+	max-width: 100%;
+	height: auto;	
+}
+
 
 .gallery-container,
 .latest-recipes-container,
@@ -29,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Roboto;
+    font-family: $font;
 }
 
 
@@ -46,9 +51,9 @@ h6 {
     /* Single column by default */
     // gap: 10px; /* Add some spacing between images */
 
-    @media (min-width: 31.25em) {
+    @media (min-width: 670px) {
         grid-template-columns: 1fr 1fr;
-      
+
         .gallery {
             grid-column: 1/ span 2;
             /* This spans the first image to take two rows */
@@ -61,22 +66,19 @@ h6 {
             /* Reset the grid-row property for the other two images */
         }
     }
-
-
 }
-
-
 
 .gallery {
     position: relative;
     overflow: hidden;
 }
 
-.gallery img {
-    width: 100%;
-
-    max-width: 100%;
-    height: auto;
+.gallery {
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .gallery-paragraph {
@@ -93,147 +95,154 @@ h6 {
 
 }
 
-.gallery-paragraph p {
-    margin: 0;
+.gallery-paragraph {
+    p {
+        margin: 0;
+    }
 }
 
+ 
 
 // latest recipe yafeng
 
-.latest-recipes-container {
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    margin-bottom: 5px;
-    // max-width:320px;
+// .latest-recipes-container {
+//     border: 2px solid rgba(0, 0, 0, 0.5);
+//     margin-bottom: 5px;
+//     // max-width:320px;
 
-}
+// }
 
-.latest-recipes-container h2 {
-    text-transform: uppercase;
-    background-color: $latest-recipes-bg;
-    color: $text-white;
-    padding: 1rem;
-    margin: 0;
-    // font-family: Roboto;
+// .latest-recipes-container {
+//     h2 {
+//         text-transform: uppercase;
+//         background-color: $latest-recipes-bg;
+//         color: $text-white;
+//         padding: 1rem;
+//         margin: 0;
+//     }
 
-}
+// }
 
-.recipe-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.recipe-list li {
-    display: flex;
-    align-items: center;
-}
+// .recipe-list {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+// }
 
 
+// .recipe-list {
+//     li {
+//         display: flex;
+//         align-items: center;
+//     }
+// }
+
+// .recipe-list li:nth-child(even) {
+//     .recipe-content-wrapper {
+//         background-color: $latest-recipes-even;
+//         /* Set the background color of even divs to grey */
+//     }
+// }
+
+// .recipe-content-wrapper {
+//     padding: 0.5rem;
+//     width: 100%;
+
+// }
+
+// .recipe-list {
+//     li {
+//         img {
+//             height: auto;
+//             margin-right: 1rem;
+//             border: 2px solid $cuisines-bg;
+//         }
+//     }
+// }
+
+// .recipe-content-wrapper {
+//     display: flex;
+//     // background-color: $white-bg;
+// }
+
+// .recipe-content {
+//     flex: 1;
+//     display: flex;
+//     align-items: center;
+//     /* Center vertically */
+// }
+
+// .recipe-content p {
+//     margin: 0;
+//     font-size: 18px;
+//     text-transform: uppercase;
+// }
 
 
-.recipe-list li:nth-child(even) .recipe-content-wrapper {
-    background-color: $latest-recipes-even;
-    /* Set the background color of even divs to grey */
+// .recipe-content p {
+//     margin: 10px 0;
+
+// }
+
+// // cusines
+
+// .cuisines-container {
+//     margin-bottom: 2px;
+//     // max-width:320px;
+//     border: 2px solid rgba(0, 0, 0, 0.5);
+
+// }
+
+// .cuisines-container-list {
+
+//     display: flex;
+//     flex-wrap: wrap;
+// }
 
 
-}
+// .cuisines-container h2 {
+//     text-transform: uppercase;
+//     background-color: $latest-recipes-bg;
+//     color: $text-white;
+//     padding: 1rem;
+//     margin: 0;
+// }
 
-.recipe-content-wrapper {
-    padding: 0.5rem;
-    width: 100%;
+// .cuisines-list {
+//     display: flex;
+//     /* Use flexbox to create the two-column layout */
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//     flex-wrap: wrap;
+//     /* Allow flex items to wrap to the next row */
+//     padding: 0.5rem;
+// }
 
-}
+// .cuisines-list li {
+//     flex-basis: 50%;
+//     /* Each cuisine takes 50% width of the container */
+//     margin-bottom: 10px;
+//     /* Add some space between each cuisine */
 
-.recipe-list li img {
-    height: auto;
-    margin-right: 1rem;
-    border: 2px solid $cuisines-bg;
-}
-
-.recipe-content-wrapper {
-    display: flex;
-    // background-color: $white-bg;
-}
-
-.recipe-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    /* Center vertically */
-}
-
-.recipe-content p {
-    margin: 0;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-
-.recipe-content p {
-    margin: 10px 0;
-
-}
-
-// cusines
-
-.cuisines-container {
-    margin-bottom: 2px;
-    // max-width:320px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-
-}
-
-.cuisines-container-list {
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.cuisines-container h2 {
-    text-transform: uppercase;
-    background-color: $latest-recipes-bg;
-    color: $text-white;
-    padding: 1rem;
-    margin: 0;
-}
-
-.cuisines-list {
-    display: flex;
-    /* Use flexbox to create the two-column layout */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    /* Allow flex items to wrap to the next row */
-    padding: 0.5rem;
-}
-
-.cuisines-list li {
-    flex-basis: 50%;
-    /* Each cuisine takes 50% width of the container */
-    margin-bottom: 10px;
-    /* Add some space between each cuisine */
-
-}
+// }
 
 
 
-.cuisine-column {
-    // flex: 1 1 33.33%; /* This makes each column take up one-third of the available width */
-    // max-width: 33.33%;
-    padding: 0 10px;
-    /* Add some spacing between columns */
-    box-sizing: border-box;
-}
+// .cuisine-column {
+//     // flex: 1 1 33.33%; /* This makes each column take up one-third of the available width */
+//     // max-width: 33.33%;
+//     padding: 0 10px;
+//     /* Add some spacing between columns */
+//     box-sizing: border-box;
+// }
 
 
-.cuisines-list li {
-    list-style: none;
-    margin-bottom: 10px;
+// .cuisines-list li {
+//     list-style: none;
+//     margin-bottom: 10px;
 
-}
+// }
 
 // container-4
 
@@ -250,49 +259,53 @@ h6 {
     padding: 10px;
 }
 
-.container-4 img,
-.container-5 img {
-    max-width: 100%;
+.container-4,
+.container-5 {
+    img {
+        max-width: 100%;
+    }
 }
 
-.container-4 h2,
-.container-5 h2 {
+.container-4,
+.container-5 {
+    h2 {
+        color: $food-title;
+    }
+}
+
+.container-4,
+.container-5 {
+    .read-more {
+        background-color: $read-more-bg;
+        height: 4vh;
+        width: 8rem;
+        color: $text-white;
+        // text-align: center; /* Center the text inside the button */
+        margin-left: auto;
+        margin-bottom: 15px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+    }
+}
+.older-posts{
+    text-transform: uppercase;
+    font-family: $font;
     color: $food-title;
 
 }
 
-.container-4 .read-more,
-.container-5 .read-more {
-    // max-width:320px;
-    background-color: $read-more-bg;
-    height: 4vh;
-    width: 7rem;
-    color: $text-white;
-    // text-align: center; /* Center the text inside the button */
-    margin-left: auto;
-    margin-bottom: 15px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
 
-// Tablet version
+//background image 
+@media (min-width: 1000px){
+	/* *** NOTE: Add the background image for the body here... */
 
-// @media (min-width:500px){
-//     // .gallery-container,
-//     // .latest-recipes-container,
-//     // .cuisines-container,
-//     // .container-4,
-//     // .container-5{
-//     //     width:100%;
-//     //     margin-left:auto;
-//     //     margin-right: auto;
-//     // }
+	body {
+		background-image: url(../images/bg.jpg);
 
-//     .gallery{
-//         display: grid;
-//         grid-auto-columns:3fr ;
-//     }
-// }
+	   }
+    }
+

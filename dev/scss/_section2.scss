@@ -55,18 +55,38 @@ h3 {
     }
        //tablet-cuisines
     //    @media (min-width:500px){
-        
+        //stop cusines froming growing and add arrows and try to fix background
     //    }
     //    Desktop-cuisines
-          @media (min-width:770px){
+          @media (max-width:770px){
            display:flex;
+           flex-shrink: 0;
            flex-direction: column;
            gap:0.4rem;
+           width: 40%;
 
           }
+
+
+          
   }
+
+
+
 }
-@media (min-width:770px){
+//dawg this is so much fun right? 
+ @media (min-width:1000px){
+        .container-4,
+.container-5 {
+   background-color: $fa-border-color;
+    max-width: 95%;
+
+}
+
+          }
+
+
+@media (max-width:770px){
     .sidebar{
         position: absolute;
         right:2rem;
