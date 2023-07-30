@@ -10,6 +10,7 @@
 body {
     font-family: $font;
     background-image: url("images/bg.jpg");
+    
 }
 img {
 	max-width: 100%;
@@ -22,6 +23,8 @@ img {
 .cuisines-container,
 .container-4,
 .container-5 {
+     display: flex;
+  max-width: 800px;
     margin-bottom: 10px;
     /* Adjust the value as per your preference */
     background-color: transparent;
@@ -46,6 +49,7 @@ h6 {
 //     border: 2px solid rgba(0, 0, 0, 0.5);
 // }
 .gallery-container {
+    display: flex;
     display: grid;
     grid-template-columns: 1fr;
     /* Single column by default */
@@ -257,6 +261,7 @@ h6 {
 .container-4-content,
 .container-5-content {
     padding: 10px;
+    background-color: $fa-border-color 
 }
 
 .container-4,
