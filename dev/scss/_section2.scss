@@ -38,6 +38,7 @@ h3 {
 //phone-small👇
 .cuisines {
     ul {
+        background-color: $white-bg;
         list-style: none;
         display: grid;
         grid-template-columns: repeat(2,1fr); 
@@ -53,6 +54,7 @@ h3 {
         grid-template-columns: repeat(3,1fr); 
         font-size: 16px;
     }
+    
        //tablet-cuisines
     //    @media (min-width:500px){
         //stop cusines froming growing and add arrows and try to fix background

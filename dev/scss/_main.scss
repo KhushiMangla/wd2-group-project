@@ -9,7 +9,7 @@
 
 body {
     font-family: $font;
-    background-image: url("images/bg.jpg");
+    background-image: url("../images/bg.jpg");
     
 }
 img {
@@ -20,14 +20,21 @@ img {
 
 .gallery-container,
 .latest-recipes-container,
-.cuisines-container,
-.container-4,
-.container-5 {
+.cuisines-container {
      flex-grow: 1;
     margin-bottom: 10px;
     /* Adjust the value as per your preference */
-    background-color: $white-bg;
+    background-color: transparent;
     /* Set the background color to transparent */
+}
+
+
+.container-4,
+.container-5{
+    background-color: $white-bg;
+       flex-grow: 1;
+    margin-bottom: 10px;
+   
 }
 
 h1,
