@@ -50,7 +50,15 @@
   <body>
     <section class="gallery-container">
       <div class="gallery">
-        <img src="images/mussel-small.jpg" alt="mussels" />
+        <img alt="mussels" 
+        src="images/mussel.jpg"
+        srcset="
+        images/mussel.jpg  704w,
+        images/mussel-small.jpg 350w
+          "
+        sizes="(max-width:500px) 350px, 
+              704px"
+        />
         <div class="gallery-paragraph">
           <p>Lorem ipsum dolor sit</p>
         </div>
@@ -76,7 +84,7 @@
         <ul>
           <li>
             <img src="images/lamb-tb.jpg" alt="lamb" />
-            <p>Met consec Tetur</p>
+            <p>Met consec Tetur Elit</p>
           </li>
           <li>
             <img src="images/breakfast-tb.jpg" alt="breakfast" />

@@ -21,6 +21,9 @@ body {
     /* Adjust the value as per your preference */
     background-color: transparent;
     /* Set the background color to transparent */
+    @media (min-width:48.125rem){
+        max-width:60%;
+    }
 }
 
 h1,
@@ -47,8 +50,10 @@ h6 {
     // gap: 10px; /* Add some spacing between images */
 
     @media (min-width: 48.125rem) {
-        // max-width: 70%;
+        width: 100%;
+        height: auto;
         grid-template-columns: 1fr 1fr;
+        max-width: 60%;
       
         .gallery {
             grid-column: 1/ span 2;
@@ -76,9 +81,7 @@ h6 {
 
 .gallery img {
     width: 100%;
-
-    max-width: 100%;
-    height: auto;
+    // max-width: 100%;
 }
 
 .gallery-paragraph {
@@ -242,7 +245,6 @@ h6 {
 .container-4,
 .container-5 {
     text-transform: uppercase;
-    // max-width:320px;
     border: 2px solid rgba(0, 0, 0, 0.5);
 
 }
