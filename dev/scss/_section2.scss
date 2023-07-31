@@ -114,22 +114,22 @@ h3 {
 
 
 //dawg this is so much fun right? 
- @media (max-width:1000px)
+/* @media (max-width:1000px)
  
  {
 .container-4,
 .container-5{
     display: flex;
     
-}
+ }
 
 
         .container-4-content,
 .container-5-content {
     
-    flex-shrink: 1;
-    display: flex;
-    flex-direction: column;
+    flex-grow:  1;
+    //display: flex;
+    /*flex-direction: column;
    box-sizing: border-box;
    
     
@@ -144,7 +144,7 @@ h3 {
           }
 
 
-          
+      */    
 
 @media (min-width:770px){
     .sidebar{
