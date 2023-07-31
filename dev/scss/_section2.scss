@@ -13,6 +13,7 @@ h3 {
 }
 
 .latest-recipes {
+    
     ul {
         list-style: none;
         padding-left: 0;
@@ -21,6 +22,7 @@ h3 {
         }
     }
     li {
+        background-color: $search-bg;
         display: flex;
         flex-wrap: nowrap;
         padding: 0.3rem;
