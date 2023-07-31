@@ -83,31 +83,16 @@ h6 {
     overflow: hidden;
 }
 
-.gallery {
-    img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        padding: 4px;
-    }
-}
-
-.gallery-paragraph {
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0.25rem;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
-    color: $text-white;
-    padding: 1rem;
-    bottom: 9px; //9px off the bottom for bg clr
-    left: 5px;
-    right: 0;
+//.gallery {
+  //  img {
+    //    width: 100%;
+      //  max-width: 100%;
+        //height: auto;
+        //padding: 4px;
+   // }
+ // }
 
 
-}
 
 .gallery-paragraph {
     p {
@@ -341,6 +326,48 @@ h6 {
     font-family: $font;
     color: $menu-background;
 
+}
+//I will proably forget but media querys used for the bg and padding for imgs to look nice i guess??
+ @media (min-width:320px){
+.gallery {
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: .5px;
+    }
+}
+.gallery-paragraph {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    color: $text-white;
+    padding: 1rem;
+    bottom: 4px; //9px off the bottom for bg clr
+    left: 1px;
+    right: 0;
+
+
+}
+ }
+
+@media (min-width:770px) {
+.gallery-paragraph {
+  
+    padding: 1rem;
+    bottom: 8px;
+    left: 2px;
+    right: 0;
+}
+
+.gallery img {
+     
+        padding: 4px;
+    }
 }
 
 
