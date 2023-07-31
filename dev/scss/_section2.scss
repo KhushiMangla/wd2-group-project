@@ -107,19 +107,20 @@ h3 {
 
         .container-4-content,
 .container-5-content {
-   flex-shrink: 1;
+    
+    flex-shrink: 1;
     display: flex;
     flex-direction: column;
    box-sizing: border-box;
    
-     transition: width 0.3s ease-in; 
+    
 
 }
 
 .gallery-container{
       box-sizing: border-box;
     
-     transition: width 0.3s ease-in; 
+   
 }
           }
 
@@ -128,6 +129,7 @@ h3 {
 
 @media (min-width:770px){
     .sidebar{
+        
         position: absolute;
         right:2rem;
         top:8rem;
