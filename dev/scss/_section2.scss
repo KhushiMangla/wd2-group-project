@@ -12,6 +12,14 @@ h3 {
   margin: 0;
 }
 
+.zero{
+    display: flex;
+    flex-direction:column;
+        margin: 0 auto;
+    max-width: 850px;
+}
+
+
 .latest-recipes {
     
     ul {
