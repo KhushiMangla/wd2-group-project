@@ -11,6 +11,12 @@ h3 {
   font-size: small;
   margin: 0;
 }
+.zero{
+    display: flex;
+    flex-direction:column;
+        margin: 0 auto;
+    max-width: 900px;
+}
 
 .latest-recipes {
     
