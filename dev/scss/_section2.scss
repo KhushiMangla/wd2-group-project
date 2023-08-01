@@ -1,5 +1,5 @@
 @use "variables" as *;
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 h3 {
   text-transform: uppercase;
@@ -10,6 +10,12 @@ h3 {
   font-weight: 350;
   font-size: small;
   margin: 0;
+}
+.zero{
+    display: flex;
+    flex-direction:column;
+        margin: 0 auto;
+    max-width: 900px;
 }
 
 .latest-recipes {
@@ -49,6 +55,7 @@ img {
   box-shadow: -1px -1px 0px 2px $hamburger-bg;
 }
 
+}
 //phone-small👇
 
 .cuisines {
