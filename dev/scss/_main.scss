@@ -62,7 +62,7 @@ h6 {
 
 
 
-    @media (min-width: 670px) {
+    @media (min-width:41.875em) {
 
         grid-template-columns: 1fr 1fr;
 
@@ -330,7 +330,7 @@ h6 {
 
 
 //background image 
-@media (min-width: 1050px) {
+@media (min-width: 65.625em) {
     /* *** NOTE: Add the background image for the body here... */
 
     body {
