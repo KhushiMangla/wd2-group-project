@@ -11,13 +11,13 @@ body {
     font-family: $font;
     background-image: url("images/bg.jpg");
     // Khushi
-    margin: 0 auto ;
+    margin: 0 auto;
     max-width: 1050px;
 }
 
 img {
-	max-width: 100%;
-	height: auto;	
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -26,8 +26,8 @@ img {
 .cuisines-container,
 .container-4,
 .container-5 {
-  max-width: 1050px;
-  
+    max-width: 1050px;
+
 }
 
 h1,
@@ -69,7 +69,7 @@ h6 {
             /* Place the other two images in the second column */
             grid-column: auto;
             /* Reset the grid-row property for the other two images */
-            
+
         }
     }
 }
@@ -240,7 +240,6 @@ h6 {
     border: 2px solid rgba(0, 0, 0, 0.5);
     // Khushi
     background-color: $white-bg
-
 }
 
 .container-4-content,
@@ -255,7 +254,7 @@ h6 {
         // max-width: 100%;
         width: 100%;
         height: auto;
-       
+
     }
 }
 
@@ -283,7 +282,8 @@ h6 {
         padding: 4px;
     }
 }
-.older-posts{
+
+.older-posts {
     text-transform: uppercase;
     font-family: $font;
     color: $food-title;
@@ -293,12 +293,11 @@ h6 {
 
 
 //background image 
-@media (min-width: 1050px){
-	/* *** NOTE: Add the background image for the body here... */
+@media (min-width: 1050px) {
+    /* *** NOTE: Add the background image for the body here... */
 
-	body {
-		background-image: url(../images/bg.jpg);
+    body {
+        background-image: url(../images/bg.jpg);
 
-	   }
     }
-
+}
