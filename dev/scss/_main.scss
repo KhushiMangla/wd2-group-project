@@ -1,28 +1,33 @@
 @use 'variables' as *;
-@use 'section2';
+
 /* dont't forget to set font-size dicuss 
    left arrow font icon confirm with laurane as link is in header ther might be conflict
    *** dont use flex-wrap for cusine list in side-bar */
 
 /* Rest of your CSS code goes here... */
 
+
 body {
-    font-family: Roboto;
+    font-family: $font;
     background-image: url("images/bg.jpg");
+    // Khushi
+    margin: 0 auto;
+    max-width: 1050px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .gallery-container,
 .latest-recipes-container,
-.cuisines-container {
-	flex-grow: 1;
-	margin-bottom: 10px;
-	/* Adjust the value as per your preference */
-	background-color: transparent;
-	/* Set the background color to transparent */
-}
-
+.cuisines-container,
 .container-4,
 .container-5 {
+    max-width: 1050px;
+
     margin-bottom: 10px;
     /* Adjust the value as per your preference */
     background-color: transparent;
@@ -38,27 +43,29 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $font;
+    font-family: $font;
 }
+
+
+
 
 // .gallery-container {
 //     // margin-bottom: 5px;
-//     max-width:100%;
+//     max-width:100%; 
 //     border: 2px solid rgba(0, 0, 0, 0.5);
 // }
 .gallery-container {
-	display: flex;
-	display: grid;
-	grid-template-columns: 1fr;
-	/* Single column by default */
-	// gap: 10px; /* Add some spacing between images */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column by default */
+    // gap: 10px; /* Add some spacing between images */
 
-    @media (min-width: 48.125rem) {
-        width: 100%;
-        height: auto;
+
+
+    @media (min-width: 670px) {
+
         grid-template-columns: 1fr 1fr;
-        max-width: 60%;
-      
+
         .gallery {
             grid-column: 1/ span 2;
             /* This spans the first image to take two rows */
@@ -69,11 +76,9 @@ h6 {
             /* Place the other two images in the second column */
             grid-column: auto;
             /* Reset the grid-row property for the other two images */
-            
+
         }
     }
-
-
 }
 
 
@@ -83,38 +88,34 @@ h6 {
     // overflow: hidden;
 }
 
-.gallery img {
-    width: 100%;
-    // max-width: 100%;
+.gallery {
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .gallery-paragraph {
-	p {
-		margin: 0;
-	}
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    color: $text-white;
+    padding: 1rem;
+
+
+
 }
 
-.circle-style {
-	display: flex;
-
-	background-color: $cuisines-bg;
-	font-size: 1rem;
-	color: white;
-	border-radius: 70%;
-	border-width: 1rem;
-	padding: 0.6rem;
-	margin: 0.1rem;
-	width: 1.5rem;
-	height: 1.5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.gallery-paragraph {
+    p {
+        margin: 0;
+    }
 }
 
-.older-posts {
-	display: flex; /* Set display to flex to make the items inside it align in a row */
-	align-items: center; /* Vertically center the items in the flex container */
-}
 
 .older-posts h2 {
 	margin: 0; /* Remove any default margins to avoid unwanted spacing */
@@ -151,6 +152,8 @@ h6 {
 //     margin: 0;
 // }
 
+
+
 // .recipe-list {
 //     li {
 //         display: flex;
@@ -168,12 +171,12 @@ h6 {
 
 // }
 
-// .recipe-content-wrapper {
-//     padding: 0.5rem;
-//     width: 100%;
+//
+
 
 // }
 
+// 
 // .recipe-list li img {
 //     height: auto;
 //     margin-right: 1rem;
@@ -198,10 +201,12 @@ h6 {
 //     text-transform: uppercase;
 // }
 
+
 // .recipe-content p {
 //     margin: 10px 0;
 
 // }
+
 
 // // cusines (The style Kushi did)
 
@@ -217,6 +222,7 @@ h6 {
 //     display: flex;
 //     flex-wrap: wrap;
 // }
+
 
 // .cuisines-container h2 {
 //     text-transform: uppercase;
@@ -245,6 +251,8 @@ h6 {
 
 // }
 
+
+
 // .cuisine-column {
 //     // flex: 1 1 33.33%; /* This makes each column take up one-third of the available width */
 //     // max-width: 33.33%;
@@ -252,6 +260,7 @@ h6 {
 //     /* Add some spacing between columns */
 //     box-sizing: border-box;
 // }
+
 
 // .cuisines-list li {
 //     list-style: none;
@@ -264,95 +273,68 @@ h6 {
 .container-4,
 .container-5 {
     text-transform: uppercase;
+    // max-width:320px;
     border: 2px solid rgba(0, 0, 0, 0.5);
-
+    // Khushi
+    background-color: $white-bg
 }
 
 .container-4-content,
 .container-5-content {
-	padding: 10px;
+    padding: 10px;
 }
 
 .container-4,
 .container-5 {
-	img {
-		max-width: 100%;
-	}
+    img {
+        // Khushi intially only max-width was here
+        // max-width: 100%;
+        width: 100%;
+        height: auto;
+
+    }
 }
 
 .container-4,
 .container-5 {
-	h2 {
-		color: $food-title;
-	}
+    h2 {
+        color: $food-title;
+    }
 }
 
 .container-4,
 .container-5 {
-	.read-more {
-		background-color: $read-more-bg;
-		height: 4vh;
-		width: 8rem;
-		color: $text-white;
-		// text-align: center; /* Center the text inside the button */
-		margin-left: auto;
-		margin-bottom: 15px;
-		font-weight: bold;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 4px;
-	}
+    .read-more {
+        background-color: $read-more-bg;
+        height: 4vh;
+        width: 8rem;
+        color: $text-white;
+        // text-align: center; /* Center the text inside the button */
+        margin-left: auto;
+        margin-bottom: 15px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+    }
 }
+
 .older-posts {
-	text-transform: uppercase;
-	font-family: $font;
-	color: $menu-background;
-}
-//I will proably forget but media querys will fix sizing after  used for the bg and padding for imgs to look nice i guess??
-@media (min-width: 320px) {
-	.gallery {
-		img {
-			width: 100%;
-			max-width: 100%;
-			height: auto;
-			padding: 0.5px;
-		}
-	}
-	.gallery-paragraph {
-		box-sizing: border-box;
-		position: absolute;
-		bottom: 0.25rem;
-		left: 0;
-		right: 0;
-		background-color: rgba(0, 0, 0, 0.5);
-		text-transform: uppercase;
-		color: $text-white;
-		padding: 1rem;
-		bottom: 4px; //9px off the bottom for bg clr
-		left: 1px;
-		right: 0;
-	}
+    text-transform: uppercase;
+    font-family: $font;
+    color: $food-title;
+
 }
 
-@media (min-width: 660px) {
-	.gallery-paragraph {
-		padding: 1rem;
-		bottom: 8px;
-		left: 4px;
-		right: 0;
-	}
 
-	.gallery img {
-		padding: 5px;
-	}
-}
 
-//background image
-@media (min-width: 1000px) {
-	/* *** NOTE: Add the background image for the body here... */
+//background image 
+@media (min-width: 1050px) {
+    /* *** NOTE: Add the background image for the body here... */
 
-	body {
-		background-image: url(../images/bg.jpg);
-	}
+    body {
+        background-image: url(../images/bg.jpg);
+
+    }
 }
