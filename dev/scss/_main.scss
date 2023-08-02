@@ -295,27 +295,25 @@ h6 {
 .older-posts {
   text-transform: uppercase;
   font-family: $roboto-condensed;
-  color: $food-title;
+  color: $cuisines-bg;
 }
 
 .bolder-posts {
   text-transform: uppercase;
   font-family: $roboto-condensed;
-  color: $food-title;
+  color: $cuisines-bg;
 }
 
 .circle-style {
 	display: flex;
 
 	background-color: $cuisines-bg;
-	font-size: 1rem;
-	color: white;
 	border-radius: 70%;
 	border-width: 1rem;
-	padding: 0.6rem;
-	margin: 0.1rem;
-	width: 1.5rem;
-	height: 1.5rem;
+	padding: .5rem;
+	margin: 1rem;
+	width: 1rem;
+	height: .9rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
