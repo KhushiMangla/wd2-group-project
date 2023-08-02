@@ -52,11 +52,38 @@ li img {
 	box-shadow: -1px -1px 0px 2px $hamburger-bg;
 }
 
+main{
+  display:flex;
+  flex-direction: column;
+}
+
+.section2{
+  order: 2;
+}
+
+.gallery-container {
+
+  order: 1;
+}
+
+.container-4, .container-5 {
+order: 3;
+}
+
+.older-posts {
+  order: 4;
+}
+
 //phone-small👇
 @media (min-width: 320px) {
-   .older-posts {
-      display: none;
-    }
+  // main{
+  //   display:flex;
+  //   flex-direction: row;
+  // }
+
+  //  .older-posts {
+  //     display: none;
+  //   }
 }
 .cuisines {
   ul {
@@ -70,6 +97,7 @@ li img {
     //phone-large👇
     @media (min-width: 330px) {
       display: grid;
+
       grid-template-columns: repeat(3, 1fr);
       // font-size: 0.3rem;
     }
