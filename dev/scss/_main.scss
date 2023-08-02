@@ -116,6 +116,16 @@ h6 {
   margin-right: 10px;
 }
 
+.bolder-posts h2 {
+  margin: 0; /* Remove any default margins to avoid unwanted spacing */
+  display: flex; /* Set display to flex to make the header and span align in a row */
+  align-items: center; /* Vertically center the items in the flex container */
+}
+
+.bolder-posts h2 span.circle-style {
+  margin-right: 10px;
+}
+
 // latest recipe (The style Kushi did)
 
 // .latest-recipes-container {
@@ -287,8 +297,28 @@ h6 {
   color: $food-title;
 }
 
+.bolder-posts {
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  color: $food-title;
+}
 
+.circle-style {
+	display: flex;
 
+	background-color: $cuisines-bg;
+	font-size: 1rem;
+	color: white;
+	border-radius: 70%;
+	border-width: 1rem;
+	padding: 0.6rem;
+	margin: 0.1rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 //background image
 @media (min-width: 65.625em) {
   /* *** NOTE: Add the background image for the body here... */

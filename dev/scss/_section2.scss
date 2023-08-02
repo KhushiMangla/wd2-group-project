@@ -52,7 +52,11 @@ li img {
 }
 
 //phone-small👇
-
+@media (min-width: 320px) {
+   .older-posts {
+      display: none;
+    }
+}
 .cuisines {
 	ul {
 		list-style: none;
@@ -68,7 +72,7 @@ li img {
 			grid-template-columns: repeat(3, 1fr);
 			// font-size: 0.3rem;
 		}
-
+		
 		//    Desktop-cuisines
 		@media (min-width: 770px) {
 			display: flex;
@@ -91,8 +95,13 @@ li img {
 		margin: 0 1rem;
 		width: 13rem;
 	}
+.older-posts {
+      display: block; /* or any other display value you want, like "flex", "grid", etc. */
+    }
 
-
+	.bolder-posts {
+      display: none; /* or any other display value you want, like "flex", "grid", etc. */
+    }
 }
 
 
