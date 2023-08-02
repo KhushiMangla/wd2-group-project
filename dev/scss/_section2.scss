@@ -14,7 +14,7 @@ h3 {
 .zero{
     display: flex;
     flex-direction:column;
-        margin: 0 auto;
+     margin: 0 auto;
     max-width: 900px;
 }
 
@@ -75,17 +75,7 @@ order: 3;
 }
 
 //phone-small👇
-@media (min-width: 320px) {
-	
-  // main{
-  //   display:flex;
-  //   flex-direction: row;
-  // }
 
-  //  .older-posts {
-  //     display: none;
-  //   }
-}
 .cuisines {
   ul {
     list-style: none;
@@ -97,16 +87,13 @@ order: 3;
     background-color: $white-bg;
     //phone-large👇
     @media (min-width: 330px) {
-      display: grid;
-
       grid-template-columns: repeat(3, 1fr);
-      // font-size: 0.3rem;
+    
     }
   
     //    Desktop-cuisines
     @media (min-width: 770px) {
-      display: flex;
-      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
       gap: 0.4rem;
     }
   }
@@ -138,9 +125,9 @@ order: 3;
 @media (min-width: 770px) {
     main {
         
-        display: grid;
-        grid-template-columns: 40% 20%;
-        grid-auto-rows: min-content;
+      display: grid;
+      grid-auto-columns: auto;
+      grid-auto-rows: min-content;
 
         section {
             grid-column: 1/2;
