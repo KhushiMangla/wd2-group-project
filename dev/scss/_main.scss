@@ -132,7 +132,24 @@ h6 {
 .bolder-posts h2 span.circle-style {
     margin-right: 10px;
 }
-
+.bolder-posts {
+    text-transform: uppercase;
+    font-family: $roboto-condensed;
+    color: $cuisines-bg;
+}
+.circle-style {
+    display: flex;
+    background-color: $cuisines-bg;
+    border-radius: 70%;
+    border-width: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 1rem;
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 // latest recipe (The style Kushi did)
 
 // .latest-recipes-container {
