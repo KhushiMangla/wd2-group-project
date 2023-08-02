@@ -2,17 +2,8 @@
 @use '_variables' as *;
 @use 'footer';
 
-// Mobile
-@media (max-width: 320px) {
-	/* Your mobile styles go here */
-}
+@use 'variables' as *;
+@use 'main';
+@use 'section2';
 
-// Tablet
-@media (min-width: 321px) and (max-width: 768px) {
-	/* Your tablet styles go here */
-}
 
-// Desktop
-@media (min-width: 769px) {
-	/* Your desktop styles go here */
-}

@@ -1,9 +1,39 @@
-@use "_variables" as * ;
+@use '_variables' as *;
 
-footer{
-     padding: 20px;
-     text-align: center;
-   color: $latest-recipes-even;
-   background-color: $main-menu;
-};
+.arrow-container {
+	display: flex;
+	align-items: center;
+}
 
+.arrow-container a {
+	margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.Arrow {
+	/* Add styles for the arrow icon */
+
+	color: $header-bg;
+	padding: 1rem;
+}
+
+.foot-1 {
+	position: absolute;
+	padding: 20px;
+	text-align: center;
+	color: $latest-recipes-even;
+	background-color: $main-menu;
+	    right: -10px;
+    margin: 10px;
+    width: 100%;
+}
+
+.foot-2 {
+	position: absolute;
+	padding: 20px;
+	text-align: center;
+	color: $latest-recipes-even;
+	background-color: $main-menu;
+	    right: -10px;
+    margin: 10px;
+    width: 100%;
+}
