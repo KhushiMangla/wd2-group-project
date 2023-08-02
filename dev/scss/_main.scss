@@ -9,7 +9,7 @@
 body {
   font-family: $roboto-light;
   font-weight: 300;
-  background-image: url("images/bg.jpg");
+background-image: url(../images/bg.jpg);
   // Khushi
   margin: 0 auto;
   max-width: 1050px;
@@ -76,7 +76,7 @@ h6 {
 
 .gallery {
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .gallery {
@@ -84,13 +84,14 @@ h6 {
     width: 100%;
     max-width: 100%;
     height: auto;
+    padding: 5px;
   }
 }
 
 .gallery-paragraph {
   position: absolute;
-  bottom: 0.25rem;
-  left: 0;
+ bottom: 9px;
+    left: 4px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
@@ -111,6 +112,16 @@ h6 {
 }
 
 .older-posts h2 span.circle-style {
+  margin-right: 10px;
+}
+
+.bolder-posts h2 {
+  margin: 0; /* Remove any default margins to avoid unwanted spacing */
+  display: flex; /* Set display to flex to make the header and span align in a row */
+  align-items: center; /* Vertically center the items in the flex container */
+}
+
+.bolder-posts h2 span.circle-style {
   margin-right: 10px;
 }
 
@@ -285,6 +296,28 @@ h6 {
   color: $food-title;
 }
 
+.bolder-posts {
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  color: $food-title;
+}
+
+.circle-style {
+	display: flex;
+
+	background-color: $cuisines-bg;
+	font-size: 1rem;
+	color: white;
+	border-radius: 70%;
+	border-width: 1rem;
+	padding: 0.6rem;
+	margin: 0.1rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 //background image
 @media (min-width: 65.625em) {
   /* *** NOTE: Add the background image for the body here... */
