@@ -1,14 +1,13 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     background-color: #005991;
     color: white;
 }
 
 .navbar-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
 }
 
 
@@ -93,7 +92,9 @@
     }
 }
 
-@media (max-width: 600px) {
+// start of media queries
+
+@media (max-width: 500px) {
     .toggle-button{
         display: flex;
     }
