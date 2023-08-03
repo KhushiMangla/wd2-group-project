@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -24,6 +26,14 @@
             text-decoration: none;
             display: block;
             transition: 0.3s;
+                @media (min-width: 770px) {
+
+                    
+        font-size: 20px;
+        padding-left: 13rem;
+        background-color: $cuisines-bg;
+        
+}
   
             &:hover {
                 background-color: white;
@@ -84,7 +94,7 @@
         input {
             width: 100%;
             padding: 5px;
-            background-color: grey;
+            background-color: #dbd2d2;
         }
         img {
             position: absolute;
@@ -101,7 +111,7 @@
         input {
             width: 100%;
             padding: 5px;
-            background-color: grey;
+           background-color: #dbd2d2;
         }
         img {
             position: absolute;
@@ -259,7 +269,7 @@
         input {
             width: 100%;
             padding: 5px;
-            background-color: grey;
+           background-color: #dbd2d2;
         }
         img {
             position: absolute;
@@ -277,11 +287,16 @@
         input {
             width: 100%;
             padding: 5px;
-            background-color: grey;
+           background-color: #dbd2d2;
         }
         img {
             position: absolute;
             right: 0;
             padding: 5px;
         }
+        
     }
+
+    
+   
+
