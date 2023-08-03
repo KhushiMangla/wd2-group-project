@@ -1,20 +1,15 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 h3 {
 	text-transform: uppercase;
 	color: white;
-	padding: 0.3rem;
+	padding: 0.3rem; 
 	background-color: $latest-recipes-bg;
 	font-family: $roboto-condensed;
 	font-weight: 400;
   margin:0;
-}
-.zero{
-    display: flex;
-    flex-direction:column;
-     margin: 0 auto;
-    max-width: 900px;
 }
 
 .latest-recipes {
@@ -25,9 +20,9 @@ h3 {
 		li:nth-child(even) {
 			background-color: $latest-recipes-even;
 		}
-    li:nth-child(odd) {
-			background-color: white;
-		}
+    li:nth-child(odd){
+      background-color: white;
+    }
     margin-top:0;
 	}
 	li {
@@ -57,8 +52,7 @@ li img {
 }
 
 main{
-  display:flex;
-  flex-direction: column;
+ @include flexColumn;
 }
 
 .section2{
@@ -88,27 +82,27 @@ order: 3;
     grid-gap: 15px;
     padding: 0.2rem 0.5rem;
     white-space: nowrap;
-    background-color: $white-bg;
-    margin:0;
+   
+    margin: 0;
     margin-bottom: 0.5rem;
-    font-size: 0.5rem;
+    background-color: $white-bg;
     overflow: hidden;
     //phone-large👇
-    @media (min-width: 330px) {
+    @include screen (330px) {
       grid-template-columns: repeat(3, 1fr);
       gap:0.625rem;
-    }
     
- 
-    // Cuisines layout for: Desktop, Tablet (Large & small)
-    @media (min-width: 770px) {
+    }
+  
+    //    Desktop-cuisines
+    @include screen (770px) {
       grid-template-columns: repeat(1, 1fr);
       gap: 0.8rem;
     }
   }
 }
 
-@media (min-width: 770px) {
+@include screen (770px) {
 	main {
 		display: flex;
 		justify-content: center;
@@ -131,7 +125,7 @@ order: 3;
 }
 
 
-@media (min-width: 770px) {
+@include screen (770px) {
     main {
         
       display: grid;
@@ -166,6 +160,14 @@ order: 3;
     }
 
     .gallery-container {
+
+
+
+
+
+
+
+    
         align-items: center;
     }
 
@@ -178,68 +180,3 @@ order: 3;
 
 
 
-//dawg this is so much fun right?
-/* @media (max-width:1000px)
- 
- {
-.container-4,
-.container-5{
-    display: flex;
-    
- }
-
-
-        .container-4-content,
-.container-5-content {
-    
-    flex-grow:  1;
-    //display: flex;
-    /*flex-direction: column;
-   box-sizing: border-box;
-   
-    
-
-}
-
-.gallery-container{
-      box-sizing: border-box;
-    
-   
-}
-          }
-
-
-      */
-
-// @media (min-width: 770px) {
-//   main{
-//     display:grid;
-//     grid-template-columns:2;
-//     grid-template-rows: 4;
-//     align-items: center;
-//   }
-//   .gallery-container{
-//     grid-column: 1/2;
-//     grid-row: 1/2;
-//   }
-//   .sidebar {
-//   //   position: absolute;
-//     // right: 2rem;
-//   //   width: 13rem;
-//     font-size: small;
-//     grid-column: 2/3;
-//     grid-template-rows: 1/2;
-//   }
-//   .container-4{
-//     grid-column: 1/2;
-//     grid-row: 2/3;
-//   }
-//   .container-5{
-//     grid-column: 1/2;
-//     grid-row: 3/4;
-//   }
-//   .older-posts{
-//     grid-column: 1/2;
-//     grid-row: 4/5;
-//   }
-// }

@@ -5,31 +5,29 @@ $text-white: white;
 
 
 $white-bg: white;
-$logo1: #005991;
-$logo2: #5494BE;
-$header-bg: #F9F9F9;
-$hamburger-bg: #005991;
-$header-bg: #F9F9F9;
-$icons: #1A71A9;
+$logo1: #005991;  //1
+$logo2: #5494BE; //2
+$header-bg: #F9F9F9; //3
+$hamburger-bg: #005991; //1
+$header-bg: #F9F9F9; //3
+$icons: #1A71A9; //4
 
 
-
-
-$menu-background: #1A71A9;
-$main-menu: #005991;
+$menu-background: #1A71A9; //4
+$main-menu: #005991; //1
 $search-bg: #DEDEDE;
-$latest-recipes-bg: #1A71A9;
-$sidebar-bg: #F9F9F9;
-$cuisines-bg: #1A71A9;
+$latest-recipes-bg: #1A71A9; //4
+$sidebar-bg: #F9F9F9;//3
+$cuisines-bg: #1A71A9; //4
 $latest-recipes-even: #E9E9E9;
-$food-title: #5494BE;
-$read-more-bg: #1A71A9;
-$left-arrow-bg: #1A71A9;
+$food-title: #5494BE; //2
+$read-more-bg: #1A71A9;//4
+$left-arrow-bg: #1A71A9; //4
 
-$footer-bg: #005991;
+$footer-bg: #005991;  //1
 
 
-$footer-bg: #005991;
+$footer-bg: #005991; //1
 
 $font:'Roboto ',sans-serif;
 
@@ -37,3 +35,17 @@ $roboto-light: 'Roboto', sans-serif;
 $roboto-condensed: 'Roboto Condensed', sans-serif;
 
 
+
+
+// $color-black: black;
+// $color-white: white;
+// $color-primary: #005991; // Hamburger, Main Menu, Footer
+// $color-secondary: #5494BE; // Logo, Food Title
+// $color-header-bg: #F9F9F9; // Header, Sidebar
+// $color-icons: #1A71A9; // Icons, Menu Background, Latest Recipes, Cuisines, Read More, Left Arrow
+
+// // Background Colors
+// $bg-white: white;
+// $bg-search: #DEDEDE;
+// $bg-latest-recipes-even: #E9E9E9;
+// $bg-footer: #005991; // Footer
