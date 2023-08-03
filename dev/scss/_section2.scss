@@ -5,7 +5,7 @@
 h3 {
 	text-transform: uppercase;
 	color: white;
-	padding: 0.3rem;
+	padding: 0.3rem; 
 	background-color: $latest-recipes-bg;
 	font-family: $roboto-condensed;
 	font-weight: 400;
@@ -20,6 +20,10 @@ h3 {
 		li:nth-child(even) {
 			background-color: $latest-recipes-even;
 		}
+    li:nth-child(odd){
+      background-color: white;
+    }
+    margin-top:0;
 	}
 	li {
 		background-color: $search-bg;
@@ -35,13 +39,14 @@ h3 {
 	}
 }
 
-li {
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 0.3rem;
-  gap: 0.5rem;
-  text-transform: uppercase;
-}
+// li {
+//   display: flex;
+//   flex-wrap: nowrap;
+//   padding: 0.3rem;
+//   gap: 0.5rem;
+//   text-transform: uppercase;
+// }
+
 li img {
 	text-align: left;
 	box-shadow: -1px -1px 0px 2px $hamburger-bg;
@@ -78,17 +83,22 @@ order: 3;
     grid-gap: 15px;
     padding: 0.2rem 0.5rem;
     white-space: nowrap;
+   
+    margin: 0;
+    margin-bottom: 0.5rem;
     background-color: $white-bg;
+    overflow: hidden;
     //phone-large👇
     @include screen (330px) {
       grid-template-columns: repeat(3, 1fr);
+      gap:0.625rem;
     
     }
   
     //    Desktop-cuisines
     @include screen (770px) {
       grid-template-columns: repeat(1, 1fr);
-      gap: 0.4rem;
+      gap: 0.8rem;
     }
   }
 }
