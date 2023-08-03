@@ -30,7 +30,7 @@
 
                     
         font-size: 20px;
-        padding-left: 13rem;
+        padding-left: 17rem;
         background-color: $cuisines-bg;
         
 }
@@ -88,14 +88,15 @@
 }
 
 .search-bar {
-        display: none;
+        
         align-items: center;
         position: relative;
         input {
             width: 100%;
             padding: 5px;
-            background-color: #dbd2d2;
-        }
+            
+             background-color: #cfc8c8;
+        } 
         img {
             position: absolute;
             right: 0;
@@ -105,13 +106,14 @@
 
 
     .search-bar-2{
-        display: none;
+        
         flex-direction: row-reverse;
         position: relative;
         input {
             width: 100%;
             padding: 5px;
-           background-color: #dbd2d2;
+       
+    background-color: #cfc8c8;
         }
         img {
             position: absolute;
@@ -186,7 +188,7 @@
     }
 
     .search-bar-2 {
-        display: none;
+        
         align-items: center;
         position: relative;
         input {
@@ -269,7 +271,8 @@
         input {
             width: 100%;
             padding: 5px;
-           background-color: #dbd2d2;
+           
+    background-color: #cfc8c8;
         }
         img {
             position: absolute;
@@ -294,9 +297,27 @@
             right: 0;
             padding: 5px;
         }
-        
     }
 
-    
-   
 
+
+@media (min-width: 770px) {
+    .navbar .search-bar input {
+width: 100%;
+padding:5px;
+background-color: #cfc8c8;
+position: relative; 
+left:1px;
+height:36px;
+width:255px; }
+
+
+.zero {
+  /* reduce the padding or other properties to make it smaller */
+    margin-bottom: 31px;
+    left: 200px;
+}
+
+
+
+    }
