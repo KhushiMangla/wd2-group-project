@@ -1,0 +1,20 @@
+
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+  
+}
+
+  
+  @mixin screen($min-width){
+    @media (min-width: $min-width){
+      @content;
+    }
+  
+  }
