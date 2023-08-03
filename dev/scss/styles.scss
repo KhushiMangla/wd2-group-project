@@ -1,9 +1,8 @@
 // Place your Sass imports here...
 @use '_variables' as *;
-@use 'footer';
-
-@use 'variables' as *;
+@use "header";
 @use 'main';
 @use 'section2';
+@use 'footer';
 
 

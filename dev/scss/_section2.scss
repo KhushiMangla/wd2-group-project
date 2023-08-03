@@ -14,7 +14,7 @@ h3 {
 .zero{
     display: flex;
     flex-direction:column;
-        margin: 0 auto;
+     margin: 0 auto;
     max-width: 900px;
 }
 
@@ -52,12 +52,30 @@ li img {
 	box-shadow: -1px -1px 0px 2px $hamburger-bg;
 }
 
-//phone-small👇
-@media (min-width: 320px) {
-   .older-posts {
-      display: none;
-    }
+main{
+  display:flex;
+  flex-direction: column;
 }
+
+.section2{
+  order: 2;
+}
+
+.gallery-container {
+
+  order: 1;
+}
+
+.container-4, .container-5 {
+order: 3;
+}
+
+.older-posts {
+  order: 4;
+}
+
+//phone-small👇
+
 .cuisines {
   ul {
     list-style: none;
@@ -69,15 +87,13 @@ li img {
     background-color: $white-bg;
     //phone-large👇
     @media (min-width: 330px) {
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
-      // font-size: 0.3rem;
+    
     }
   
     //    Desktop-cuisines
     @media (min-width: 770px) {
-      display: flex;
-      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
       gap: 0.4rem;
     }
   }
@@ -109,9 +125,9 @@ li img {
 @media (min-width: 770px) {
     main {
         
-        display: grid;
-        grid-template-columns: 40% 20%;
-        grid-auto-rows: min-content;
+      display: grid;
+      grid-auto-columns: auto;
+      grid-auto-rows: min-content;
 
         section {
             grid-column: 1/2;
