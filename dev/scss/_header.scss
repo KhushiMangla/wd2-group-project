@@ -29,8 +29,8 @@
                 @media (min-width: 770px) {
 
                     
-        font-size: 20px;
-        padding-left: 17rem;
+        font-size: 30px;
+        padding-left: 10rem;
         background-color: $cuisines-bg;
         
 }
@@ -315,7 +315,9 @@ width:255px; }
 .zero {
   /* reduce the padding or other properties to make it smaller */
     margin-bottom: 31px;
-    left: 200px;
+    position: relative;
+    left: 150px;
+  
 }
 
 
