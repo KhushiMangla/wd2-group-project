@@ -11,6 +11,15 @@
   
 }
 
+@mixin flex($direction: row, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@include flex($direction: column);
+
   
   @mixin screen($min-width){
     @media (min-width: $min-width){

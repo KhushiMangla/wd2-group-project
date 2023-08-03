@@ -1,11 +1,6 @@
 @use "variables" as *;
 @use 'mixins' as *;
 
-/* dont't forget to set font-size dicuss 
-   left arrow font icon confirm with laurane as link is in header ther might be conflict
-   *** dont use flex-wrap for cusine list in side-bar */
-
-/* Rest of your CSS code goes here... */
 
 body {
     font-family: $roboto-light;
@@ -26,12 +21,9 @@ img {
 .container-4,
 .container-5 {
     max-width: 1050px;
-
     margin-bottom: 10px;
-    /* Adjust the value as per your preference */
     background-color: transparent;
 
-    /* Set the background color to transparent */
     @include screen (48.125rem) {
         max-width: 702px;
     }
@@ -46,34 +38,22 @@ h6 {
     font-family: $roboto-condensed;
     font-weight: 700;
     text-transform: uppercase;
-
 }
 
-// .gallery-container {
-//     // margin-bottom: 5px;
-//     max-width:100%;
-//     border: 2px solid rgba(0, 0, 0, 0.5);
-// }
 .gallery-container {
     display: grid;
     grid-template-columns: 1fr;
-    /* Single column by default */
-    // gap: 10px; /* Add some spacing between images */
-
-
-    @include screen (41.875em) {
+  
+        @include screen (41.875em) {
         grid-template-columns: 1fr 1fr;
 
         .gallery {
             grid-column: 1 / span 2;
-            /* This spans the first image to take two rows */
         }
 
         .gallery:not(:first-child) {
             grid-column: 2;
-            /* Place the other two images in the second column */
-            grid-column: auto;
-            /* Reset the grid-row property for the other two images */
+            grid-column: auto;   
         }
     }
 }
@@ -111,11 +91,8 @@ h6 {
 
 .older-posts h2 {
     margin: 0;
-    /* Remove any default margins to avoid unwanted spacing */
     display: flex;
-    /* Set display to flex to make the header and span align in a row */
     align-items: center;
-    /* Vertically center the items in the flex container */
 }
 
 .older-posts h2 span.circle-style {
@@ -124,11 +101,8 @@ h6 {
 
 .bolder-posts h2 {
     margin: 0;
-    /* Remove any default margins to avoid unwanted spacing */
     display: flex;
-    /* Set display to flex to make the header and span align in a row */
     align-items: center;
-    /* Vertically center the items in the flex container */
 }
 
 .bolder-posts h2 span.circle-style {
