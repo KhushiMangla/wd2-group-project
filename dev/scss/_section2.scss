@@ -9,11 +9,11 @@ h3 {
 	background-color: $latest-recipes-bg;
 	font-family: $roboto-condensed;
 	font-weight: 400;
-
-    margin: 0;
+  margin:0;
 }
 
 .latest-recipes {
+
 	ul {
 		list-style: none;
 		padding-left: 0;
@@ -29,7 +29,7 @@ h3 {
 		background-color: $search-bg;
 		display: flex;
 		flex-wrap: nowrap;
-		padding: 0.3rem;
+		padding: 0.5rem;
 		gap: 0.5rem;
 		text-transform: uppercase;
 	}
@@ -46,7 +46,6 @@ h3 {
 //   gap: 0.5rem;
 //   text-transform: uppercase;
 // }
-
 li img {
 	text-align: left;
 	box-shadow: -1px -1px 0px 2px $hamburger-bg;
@@ -73,7 +72,7 @@ order: 3;
   order: 4;
 }
 
-//phone-small👇
+
 
 .cuisines {
   ul {
