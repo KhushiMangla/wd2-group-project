@@ -27,4 +27,25 @@
     margin: 10px;
     width: 100%;
 }
+.foot-2 {
+    font-family: $roboto-condensed;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    color: $latest-recipes-even;
+    background-color: $main-menu;
+        right: -10px;
+    margin: 10px;
+    width: 100%;
+}
 
+@media (min-width: 300px) and (max-width: 765px){
+    .foot-1{
+        display: none;
+    }
+  }
+@media (min-width: 770px) {
+    .foot-2{
+        display: none;
+    }
+}

@@ -18,50 +18,63 @@
   <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
   <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
 </head>
-<header class="dawg">
 
-  <img alt="logo" src="images/small-logo.jpg" class="zero" srcset="
-	images/small-logo.jpg 450w, <!-- adjust this later - why are you like this -->
-	images/smalll-logo.jpg 480w,
-	images/logo.png 768w,
-	images/logo.png 1024w,
-	images/logo.png 1280w" sizes="(min-width: 960px) calc(10vw - 60px). 900px" />
-  <!-- <div class="search-bar-2">
-		<input class="search" type="text" placeholder="Search..">
-		<img src="images/search.png" alt="search">
-	</div> -->
-  <!-- Nav starts here :/ -->
-  <nav class="navbar">
-    <a href="#" class="toggle-button">
-      <img src="images/menu.png" alt="menu">
-    </a>
-    <div class="navbar-links">
-      <!-- social media icons -->
 
-      <!-- search bar -->
+<header>
 
-      <div class="search-bar">
-        <input class="search" type="text" placeholder="Search..">
-        <img src="images/search.png" alt="search">
-      </div>
-      <!-- <div class="navbar-links"> -->
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div id="social-media">
-        <img src="images/facebook.svg" alt="facebook">
-        <img src="images/google.svg" alt="google">
-        <img src="images/twitter.svg" alt="twitter">
-      </div>
-
-      <!-- </div> -->
+  <div class="logo-menu">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <img src="images/small-logo.jpg" alt="Small Logo" class="small-logo">
+    <img src="images/menu.png" alt="Hamburger Menu" id="hamburger-icon">
+    <div id="big-searchbar">
+      <input type="text" placeholder="Search">
+      <img src="images/search.png" alt="Search Magnifying Glass">
     </div>
-  </nav>
+    <div id="big-social-media">
+      <img src="images/facebook.svg" alt="Facebook" class="filter-blue" id="facebook-icon-header">
+      <img src="images/google.svg" alt="Google" class="filter-blue">
+      <img src="images/twitter.svg" alt="Twitter" class="filter-blue">
+      </div>
+  </div>
+
+
+  <nav id="main-nav">
+    <div id="searchbar">
+      <input type="text" placeholder="Search">
+      <img src="images/search.png" alt="Search Magnifying Glass">
+    </div>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Reviews</li>
+      <li>Recipes</li>
+      <li>Contact</li>
+    </ul>
+    <div id="searchbar2">
+      <input type="text" placeholder="Search">
+      <img src="images/search.png" alt="Search Magnifying Glass">
+    </div>
+    <!-- use font awesome for social media icons -->
+    <div id="social-media">
+      <div class="icon-wrapper">
+        <img src="images/facebook.svg" alt="Facebook" class="filter-blue" id="facebook-icon">
+       
+      </div>
+      <div class="icon-wrapper">
+        <img src="images/google.svg" alt="Google" class="filter-blue">
+      
+      </div>
+      <div class="icon-wrapper">
+        <img src="images/twitter.svg" alt="Twitter" class="filter-blue">
+    
+      </div>
+      </div>
+
+  
 </header>
+
+
+
 <body>
   <main>
     <section class="gallery-container">
@@ -187,6 +200,7 @@
     <script src="scripts/script.min.js?cachebuster=1"></script>
     <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
   </main>
+  <footer class="foot-2">&copy;2013 Site designed by Micheal Lee. For educational purpose only. Image Credits</footer>
 </body>
 
 </html>

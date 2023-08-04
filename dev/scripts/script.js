@@ -1,8 +1,6 @@
-// Write your JavaScript here...
+const toggleButton = document.getElementById("hamburger-icon");
+const navbarLinks = document.getElementById("main-nav");
 
-const toggleButton = document.getElementsByClassName("toggle-button")[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-})
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+});
