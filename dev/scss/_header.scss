@@ -67,7 +67,7 @@
 	}
 
 	#social-media {
-		display: none;
+		
 		justify-content: center;
 		padding: 5px;
 		img {
@@ -290,6 +290,12 @@
 }
 
 @media (min-width: 770px) {
+
+	.navbar .navbar-links ul li a {
+  
+    display: block;
+    padding-right: 100px;
+}
 	.navbar .search-bar input {
 		
 		padding: 15px;
@@ -328,6 +334,21 @@
 
 .dawg{
 	background-color: $sidebar-bg;
+}
+
+#social-media{
+	
+	 
+    width: 25px;
+    cursor: pointer;
+    position: relative;
+    left: 80rem;
+    bottom: 77px;
+    transition: 0.5s;
+    padding: 1px;
+    width: 1.8rem;
+	display: flex;
+	flex-direction: initial;
 }
 
 h3 {
