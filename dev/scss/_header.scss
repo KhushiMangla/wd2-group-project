@@ -193,7 +193,13 @@
 
 
 // 500px
+@media (min-width: 500px){
+	.foot-1{
+		display: none;
+	}
+}
 @media (max-width: 500px) {
+	
 	.toggle-button {
 		display: flex;
 	}
@@ -320,8 +326,27 @@
 
 }
 
+.dawg{
+	background-color: $sidebar-bg;
+}
 
+h3 {
+    text-transform: uppercase;
+    color: white;
+    padding: 0.3rem;
+    background-color: #1A71A9;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    margin: 9px;
+    position: relative;
+    margin-bottom: 0px;
+    width: 199px;
+    left: -10px;
+}	
  
+.foot-1{
+	display: flex;
+	text-align: center;
 
 
 }

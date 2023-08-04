@@ -16,9 +16,14 @@
 	padding: 1rem;
 }
 
-footer {
-	padding: 20px;
+.foot-1 {
+	font-family: $roboto-condensed;
+	position: absolute;
+	padding: 5px;
 	text-align: center;
 	color: $latest-recipes-even;
 	background-color: $main-menu;
+	    right: -10px;
+    margin: 10px;
+    width: 100%;
 }
