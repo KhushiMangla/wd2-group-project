@@ -302,7 +302,7 @@
 		background-color: #cfc8c8;
 		position: relative;
 		left: 1px;
-		height: 36px;
+		height: 26px;
 		
 	}
 
@@ -336,7 +336,7 @@
 	background-color: $sidebar-bg;
 }
 
-#social-media{
+#social-media img{
 	
 	 
     width: 25px;
@@ -345,10 +345,9 @@
     left: 80rem;
     bottom: 77px;
     transition: 0.5s;
-    padding: 1px;
+    padding: 5px;
     width: 1.8rem;
-	display: flex;
-	flex-direction: initial;
+	
 }
 
 h3 {
@@ -362,7 +361,7 @@ h3 {
     position: relative;
     margin-bottom: 0px;
     width: 199px;
-    left: -10px;
+    left: 2px;
 }	
  
 .foot-1{
