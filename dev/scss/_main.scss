@@ -1,5 +1,5 @@
 @use "variables" as *;
-@use 'mixins' as *;
+@use "mixins" as *;
 
 /* dont't forget to set font-size dicuss 
    left arrow font icon confirm with laurane as link is in header ther might be conflict
@@ -8,16 +8,16 @@
 /* Rest of your CSS code goes here... */
 
 body {
-    font-family: $roboto-light;
-    font-weight: 300;
-    background-image: url(../images/bg.jpg);
-    margin: 0 auto;
-       max-width: 1920px;
+  font-family: $roboto-light;
+  font-weight: 300;
+  background-image: url(../images/bg.jpg);
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .gallery-container,
@@ -25,16 +25,16 @@ img {
 .cuisines-container,
 .container-4,
 .container-5 {
-    max-width: 1050px;
+  max-width: 1050px;
 
-    margin-bottom: 10px;
-    /* Adjust the value as per your preference */
-    background-color: transparent;
+  margin-bottom: 10px;
+  /* Adjust the value as per your preference */
+  background-color: transparent;
 
-    /* Set the background color to transparent */
-    @include screen (48.125rem) {
-        max-width: 951px;
-    }
+  /* Set the background color to transparent */
+  @include screen(48.125rem) {
+    max-width: 951px;
+  }
 }
 
 h1,
@@ -43,10 +43,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $roboto-condensed;
-    font-weight: 700;
-    text-transform: uppercase;
-
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 // .gallery-container {
@@ -55,176 +54,173 @@ h6 {
 //     border: 2px solid rgba(0, 0, 0, 0.5);
 // }
 .gallery-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* Single column by default */
-    // gap: 10px; /* Add some spacing between images */
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Single column by default */
+  // gap: 10px; /* Add some spacing between images */
 
+  @include screen(41.875em) {
+    grid-template-columns: 1fr 1fr;
 
-    @include screen (41.875em) {
-        grid-template-columns: 1fr 1fr;
-
-        .gallery {
-            grid-column: 1 / span 2;
-            /* This spans the first image to take two rows */
-        }
-
-        .gallery:not(:first-child) {
-            grid-column: 2;
-            /* Place the other two images in the second column */
-            grid-column: auto;
-            /* Reset the grid-row property for the other two images */
-        }
+    .gallery {
+      grid-column: 1 / span 2;
+      /* This spans the first image to take two rows */
     }
+
+    .gallery:not(:first-child) {
+      grid-column: 2;
+      /* Place the other two images in the second column */
+      grid-column: auto;
+      /* Reset the grid-row property for the other two images */
+    }
+  }
 }
 
 .gallery {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery {
-    img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        padding: 5px;
-    }
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+  }
 }
 
 .gallery-paragraph {
-    position: absolute;
-    bottom: 9px;
-    left: 4px;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
-    color: $text-white;
-    padding: 1rem;
+  position: absolute;
+  bottom: 9px;
+  left: 4px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  color: $text-white;
+  padding: 1rem;
 }
 
 .gallery-paragraph {
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }
 
 .older-posts h2 {
-    margin: 0;
-    /* Remove any default margins to avoid unwanted spacing */
-    display: flex;
-    /* Set display to flex to make the header and span align in a row */
-    align-items: center;
-    /* Vertically center the items in the flex container */
+  margin: 0;
+  /* Remove any default margins to avoid unwanted spacing */
+  display: flex;
+  /* Set display to flex to make the header and span align in a row */
+  align-items: center;
+  /* Vertically center the items in the flex container */
 }
 
 .older-posts h2 span.circle-style {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .bolder-posts h2 {
-    margin: 0;
-    /* Remove any default margins to avoid unwanted spacing */
-    display: flex;
-    /* Set display to flex to make the header and span align in a row */
-    align-items: center;
-    /* Vertically center the items in the flex container */
+  margin: 0;
+  /* Remove any default margins to avoid unwanted spacing */
+  display: flex;
+  /* Set display to flex to make the header and span align in a row */
+  align-items: center;
+  /* Vertically center the items in the flex container */
 }
 
 .bolder-posts h2 span.circle-style {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .bolder-posts {
-    text-transform: uppercase;
-    font-family: $roboto-condensed;
-    color: $cuisines-bg;
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  color: $cuisines-bg;
 }
 
 .circle-style {
-    @include flexCenter;
-    background-color: $cuisines-bg;
-    border-radius: 70%;
-    border-width: 1rem;
-    padding: 0.5rem;
-    margin: 1rem;
-    width: 1rem;
-    height: 0.9rem;
-    align-items: center;
+  @include flexCenter;
+  background-color: $cuisines-bg;
+  border-radius: 50%;
+  border-width: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  width: 1rem;
+  height: 0.9rem;
+  align-items: center;
 }
-
 
 .container-4,
 .container-5 {
-    background-color: $white-bg;
+  background-color: $white-bg;
 
-    .container-4-content,
-    .container-5-content {
-        padding: 10px;
-    }
+  .container-4-content,
+  .container-5-content {
+    padding: 10px;
+  }
 
-    img {
-        // Khushi intially only max-width was here
-        // max-width: 100%;
-        width: 100%;
-        height: auto;
-    }
+  img {
+    // Khushi intially only max-width was here
+    // max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
 
-    h2 {
-        color: $food-title;
-    }
+  h2 {
+    color: $food-title;
+  }
 
-    .read-more {
-        background-color: $read-more-bg;
-        height: 4vh;
-        width: 8rem;
-        color: $text-white;
-        // text-align: center; /* Center the text inside the button */
-        margin-left: auto;
-        margin-bottom: 15px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-family: $roboto-condensed;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 4px;
-    }
+  .read-more {
+    background-color: $read-more-bg;
+    height: 4vh;
+    width: 8rem;
+    color: $text-white;
+    // text-align: center; /* Center the text inside the button */
+    margin-left: auto;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: $roboto-condensed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
 }
 
 .older-posts {
-    text-transform: uppercase;
-    font-family: $roboto-condensed;
-    color: $food-title;
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  color: $food-title;
 }
 
 .bolder-posts {
-    text-transform: uppercase;
-    font-family: $roboto-condensed;
-    color: $food-title;
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  color: $food-title;
 }
 
 .circle-style {
-    @include flexCenter;
-    background-color: $cuisines-bg;
-    font-size: 1rem;
-    color: white;
-    border-radius: 70%;
-    border-width: 1rem;
-    padding: 0.6rem;
-    margin: 0.1rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    align-items: center;
+  @include flexCenter;
+  background-color: $cuisines-bg;
+  font-size: 1rem;
+  color: white;
+  border-radius: 70%;
+  border-width: 1rem;
+  padding: 0.6rem;
+  margin: 0.1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  align-items: center;
 }
 
 //background image
 
+@include screen(65.625em) {
+  /* *** NOTE: Add the background image for the body here... */
 
-@include screen (65.625em) {
-    /* *** NOTE: Add the background image for the body here... */
-
-    body {
-        background-image: url(../images/bg.jpg);
-    }
+  body {
+    background-image: url(../images/bg.jpg);
+  }
 }

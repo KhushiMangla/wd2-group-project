@@ -1,9 +1,8 @@
-// @use "abstract/variables" as *;
-
-/* Mobile styles - Hide hamburger menu content and search bar */
+@use "variables" as *;
+@use "mixins" as *;
 
 .logo-menu {
-  background-color: white;
+  background-color: $white-bg;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
@@ -29,7 +28,6 @@
     transform: rotate(360deg);
   }
 }
-
 
 @media (max-width: 330px) {
   .logo {
@@ -59,7 +57,7 @@ nav {
   input {
     width: 100%;
     padding: 5px;
-    background-color: #dddddd;
+    background-color: $search-bg;
   }
   img {
     position: absolute;
@@ -80,19 +78,19 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #4470a5;
+    background-color: $main-menu;
 
     li {
       font-family: "Roboto Condensed", sans-serif;
-      color: white;
+      color: $text-white;
       text-align: center;
       padding: 5px;
       width: 100%;
-      border-bottom: 1px solid #335a8e;
+      border-bottom: 1px solid $main-menu;
       cursor: pointer;
       &:hover {
-        color: #335a8e;
-        background-color: white;
+        color: $main-menu;
+        background-color: $white-bg;
         width: 100%;
       }
     }
@@ -112,10 +110,7 @@ nav {
     transition: 0.5s;
 
     &:hover {
-        animation: rotate-vertical 1.1s ease-out;
-    //   transform: rotateY(180deg);
-    //   filter: invert(99%) sepia(0%) saturate(2519%) hue-rotate(179deg)
-    //     brightne ss(115%) contrast(82%);
+      animation: rotate-vertical 1.1s ease-out;
     }
   }
 }
@@ -132,7 +127,7 @@ nav {
 
 // hide hamburger menu on screens width 500px or more
 
-@media (min-width: 500px) {
+@include screen(31.25em) {
   #hamburger-icon {
     display: none;
   }
@@ -154,7 +149,7 @@ nav {
     input {
       width: 100%;
       padding: 10px;
-      background-color: #dddddd;
+      background-color: $search-bg;
       border-radius: 5px;
       border: 1px solid transparent;
       box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
@@ -175,8 +170,8 @@ nav {
       li {
         padding: 12px;
         &:hover {
-          color: #335a8e;
-          background-color: white;
+          color: $main-menu;
+          background-color: $white-bg;
         }
       }
     }
@@ -196,13 +191,13 @@ nav {
 }
 
 // social media icons appear
-@media (min-width: 700px) {
+@include screen(43.75em) {
   #big-social-media {
     display: flex;
     margin-right: 70px;
     flex-direction: row;
     gap: 10px;
-    width: 25px;
+    // width: 25px;
     img {
       width: 25px;
       cursor: pointer;
@@ -217,7 +212,7 @@ nav {
 }
 
 // hide searchbar on screens width 770px or more
-@media (min-width: 770px) {
+@include screen(48.125em) {
   /* Hide the big search bar on larger screens */
   #big-searchbar {
     display: none;
